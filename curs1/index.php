@@ -1,4 +1,15 @@
 <?php
-echo "Urmeaza ceva interesant";
-echo "ctrl+shift+X ar insemna o prescurtare pentru pull request. hai sa o testam";
+
+$age = 10;
+$y = 20;
+
+$z = "Text";
+$_test = "Test";
+
+$b = TRUE;
+
+define("NAME","Thomas"); //trecand true ca ultima valoare, numele variabilei nu este sensibil la majuscule si minuscule
+
+echo NAME;
+
 ?>

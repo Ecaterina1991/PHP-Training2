@@ -1,0 +1,31 @@
+ctrl+shift+A - commit apoi mesaj apoi enter
+ctrl+shift+X - pull request
+................
+am ramas la cursul 04
+
+variabiliele nu au voie sa aiba spatii goale
+la citirea constantelo nu se mai trece $ in fata
+
+
+
+
+
+............
+tricky tricky bum
+
+<?php
+
+function curs_php($modul, $total_ore, $rest_ore) {
+  $parcurs_ore = $total_ore - $rest_ore;
+  if ($modul === $total_ore) {
+    echo "Cursul a=cesta de PHP contine {$total_ore} ore, l-ai parcurs in intregime.";
+  } elseif ($modul >= $total_ore) {
+    echo "Ai parcurs {$parcurs_ore} ore din modulul {$modul}, mai ai nevoie de {$rest_ore} ore.";
+  } else {
+    echo "Modulul {$modul} nu exista in acest curs de PHP";
+  }
+}
+
+curs_php("PHP", 120, 20);
+
+?>
