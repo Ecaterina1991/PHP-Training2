@@ -1,7 +1,151 @@
 ctrl+shift+A - commit apoi mesaj apoi enter
 ctrl+shift+X - pull request
+
+echo "<br>";
+
+............................
+//executia conditionata
+// 1.Creați o variabilă număr întreg și verificați dacă este pozitiv, negativ sau zero. Dacă este pozitiv, afișați mesajul "Numărul este pozitiv". Dacă este negativ, afișați mesajul "Numărul este negativ". Dacă este zero, afișați mesajul "Numărul este zero".
+
+// $numarIntreg = -5;
+
+// if ($numarIntreg>0) {
+//   echo "Numărul este pozitiv";
+// } 
+// else if ($numarIntreg<0) {
+//   echo "Numărul este negativ";
+// }
+// else {
+//   echo "Numărul este zero";
+// }
+
+
+// Verificare număr par sau impar:
+// Creați o variabilă număr întreg și verificați dacă este par sau impar. Dacă este par, afișați mesajul "Numărul este par". Dacă este impar, afișați mesajul "Numărul este impar".
+
+// $numarParImpar = 9;
+// $rezultat = $numarParImpar%2;
+
+// if ($rezultat == 0) {
+//   echo "Numarul este par";
+// } 
+// else {
+//    echo "Numarul este impar";
+//}
+
+// Verificare vârsta eligibilității:
+//   Creați o variabilă număr întreg pentru vârsta utilizatorului și verificați dacă acesta este eligibil pentru a vota. Dacă utilizatorul are 18 ani sau mai mult, afișați mesajul "Ești eligibil pentru a vota". Dacă utilizatorul are mai puțin de 18 ani, afișați mesajul "Nu ești încă eligibil pentru a vota".
+
+$varsta = 17;
+
+if ($varsta>=18) {
+  echo "Ești eligibil pentru a vota";
+} 
+else if ($varsta<=18) {
+  echo "Nu ești încă eligibil pentru a vota";
+}
+
+//multumesc
+
+.....................
+<?php
+
+$r = 10; 
+define("PI", 3.14);
+
+$surface = $r**2*PI;
+echo "The result is " . $surface;
+
+
+//browserul nu ne permite introducerea mai multor spatii goale. putem introduce un spatiu gol o singura data
+?>
+..........................
+
+<?php
+
+$r = 10; 
+define("PI", 3.14);
+
+$surface = $r**2*PI;
+echo "The result is " . $surface;
+
+
+//browserul nu ne permite introducerea mai multor spatii goale. putem introduce un spatiu gol o singura data
+?>
+.........................
+
+<?php
+
+$a = 10;
+
+echo (print($a)); 
+
+$x = 10;
+
+echo $x++;
+echo "<br>";
+echo $x;
+
+//Interesant! pentru ca php citeste de la stanga la dreapta, acesta mai intai citeste variabila si apoi citeste incrementarea si atunci prima iteratie vine cu operatorul initial
+
+?>
+
+<?php
+
+$x = 10;
+$y = 10;
+
+//echo $x == $y; am obtinut 1, ceea ce inseamna true
+// var_dump($x === $y);
+
+var_dump($x < $y);
+
+?>
+
+<?php
+
+$x = 10;
+$y = 2;
+
+//echo $x -= $y; 
+echo "<br>";
+echo $x ** $y; //10*10
+
+?>
+
+<?php
+
+$x = 10;
+$y = 3;
+
+echo $x % $y;
+
+?>
+
 ................
 am ramas la cursul 04
+
+<?php
+
+$age = 10;
+$y = 20;
+
+$z = "Text";
+$_test = "Test";
+
+$b = TRUE;
+
+define("NAME","Thomas"); //trecand true ca ultima valoare, numele variabilei nu este sensibil la majuscule si minuscule
+
+echo NAME;
+
+?>
+
+
+
+
+
+
 
 variabiliele nu au voie sa aiba spatii goale
 la citirea constantelo nu se mai trece $ in fata
