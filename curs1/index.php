@@ -1,27 +1,15 @@
 <?php
 
-// Calcularea prețului total:
-// Creați o variabilă pentru prețul unui produs și o variabilă pentru numărul de produse comandate. Bazați-vă pe cantitatea comandată pentru a calcula prețul total. Dacă sunt comandate mai puțin de 10 produse, prețul este de 100 lei pe produs. Dacă sunt comandate între 10 și 50 de produse, prețul este de 90 lei pe produs. Dacă sunt comandate mai mult de 50 de produse, prețul este de 80 lei pe produs. Afișați prețul total.
+$password = "test123";
+$old_password = "test";
+$user_input = "test123";
 
-$pretProdus = 100;
-$numarProduse = 60;
-$pretTotal = $pretProdus * $numarProduse;
-$discount10 = $pretTotal * 10 / 100;
-$discount20 = $pretTotal * 20 / 100;;
-
-
-
-if ($numarProduse < 10) {
-  echo $pretTotal;
+if($user_input == $password) {
+  echo "Welcome";
 }
-else if ($numarProduse < 50 && $numarProduse > 10) {
-  echo $pretTotal = $pretTotal - $discount10;
-}
-else {
-  echo $pretTotal = $pretTotal - $discount20;
-}
-
-//multumesc
-
-
+elseif($user_input== $old_password) {
+  echo "This is your old password, you have a new one";}
+  else {
+    echo "Wrong password";
+  }
 ?>

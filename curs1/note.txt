@@ -2,6 +2,79 @@ ctrl+shift+A - commit apoi mesaj apoi enter
 ctrl+shift+X - pull request
 
 echo "<br>";
+......................
+<?php
+
+$password = "test123";
+$old_password = "test";
+$user_input = "test123";
+
+if($user_input == $password) {
+  echo "Welcome";
+}
+elseif($user_input== $old_password) {
+  echo "This is your old password, you have a new one";}
+  else {
+    echo "Wrong password";
+  }
+?>
+
+...............
+
+<?php
+
+$number = 10;
+
+if ($number > 10) {
+  echo "greater than 10";
+}
+
+elseif($number==10) {
+  echo "equal to 10";
+}
+
+else {
+  echo "less than 10";
+}
+
+?>
+
+..................
+<?php
+
+if//cuvant cheie
+(1==1)//conditia
+{ //bloc de cod
+  echo "1 egal 1";//declaratia
+}
+
+?>
+
+........................
+
+// Calcularea prețului total:
+// Creați o variabilă pentru prețul unui produs și o variabilă pentru numărul de produse comandate. Bazați-vă pe cantitatea comandată pentru a calcula prețul total. Dacă sunt comandate mai puțin de 10 produse, prețul este de 100 lei pe produs. Dacă sunt comandate între 10 și 50 de produse, prețul este de 90 lei pe produs. Dacă sunt comandate mai mult de 50 de produse, prețul este de 80 lei pe produs. Afișați prețul total.
+
+$pretProdus = 100;
+$numarProduse = 60;
+$pretTotal = $pretProdus * $numarProduse;
+$discount10 = $pretTotal * 10 / 100;
+$discount20 = $pretTotal * 20 / 100;;
+
+
+
+if ($numarProduse < 10) {
+  echo $pretTotal;
+}
+else if ($numarProduse < 50 && $numarProduse > 10) {
+  echo $pretTotal = $pretTotal - $discount10;
+}
+else {
+  echo $pretTotal = $pretTotal - $discount20;
+}
+
+//multumesc
+
 .........................
 // Verificarea numelui de utilizator:
 // Creați o variabilă pentru numele de utilizator și verificați dacă acesta este corect formatat. Numele de utilizator trebuie să înceapă cu o literă, să aibă o lungime între 6 și 12 caractere și să nu conțină caractere speciale sau spații. Afișați mesajul "Numele de utilizator este valid" sau "Numele de utilizator nu este valid" în funcție de rezultat.
