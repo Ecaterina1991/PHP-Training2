@@ -2,6 +2,19 @@ ctrl+shift+A - commit apoi mesaj apoi enter
 ctrl+shift+X - pull request
 
 echo "<br>";
+.........................
+// Verificarea numelui de utilizator:
+// Creați o variabilă pentru numele de utilizator și verificați dacă acesta este corect formatat. Numele de utilizator trebuie să înceapă cu o literă, să aibă o lungime între 6 și 12 caractere și să nu conțină caractere speciale sau spații. Afișați mesajul "Numele de utilizator este valid" sau "Numele de utilizator nu este valid" în funcție de rezultat.
+
+$numeUtilizator = "Ecaterina";
+$lungimeNume = strlen($numeUtilizator);
+$literaInceput = ctype_alpha(substr($numeUtilizator, 0, 1));
+
+if (isset($numeUtilizator) && $lungimeNume >= 6 && $lungimeNume <=12 && $literaInceput==true) {
+  echo "Numele de utilizator este valid";
+} else {
+  echo "Numele de utilizator nu este valid";
+}
 .................
 <?php
 // Determinarea celor mai mari trei numere:
