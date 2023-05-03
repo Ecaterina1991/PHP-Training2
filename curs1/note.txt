@@ -2,6 +2,28 @@ ctrl+shift+A - commit apoi mesaj apoi enter
 ctrl+shift+X - pull request
 
 echo "<br>";
+.................
+<?php
+// Determinarea celor mai mari trei numere:
+// Creați trei variabile număr întreg și determinați care dintre ele este cel mai mare. Afișați mesajul "Cel mai mare număr este X", unde X este cel mai mare număr. Faceți acest lucru folosind instrucțiuni if și else if.
+
+$numar1 = 5;
+$numar2 = 1;
+$numar3 = 10;
+
+if ($numar1 > $numar2 && $numar1 > $numar3) {
+  echo "Cel mai mare numar este " . $numar1;
+}
+else if ($numar2 > $numar1 && $numar2 > $numar3) {
+  echo "Cel mai mare numar este " . $numar2;
+}
+else  {
+  echo "Cel mai mare numar este " . $numar3;
+}
+
+//multumesc
+
+?>
 
 ............................
 //executia conditionata
