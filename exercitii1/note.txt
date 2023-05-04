@@ -1,0 +1,181 @@
+1. variabila variabila
+
+<?php
+
+$variabila_mea = "Acest ceai de musetel si lamaie este fantastic";
+$variabila_cutiuta = "variabila_mea";
+
+echo $$variabila_cutiuta;
+
+$variabila_simpla = "Aceasta este o variabila simpla in PHP.";
+$nume_variabila = "variabila_simpla";
+
+echo $nume_variabila;
+echo $$nume_variabila;
+?>
+
+2. 
+
+$a = 5; // in binar: 0101
+$b = 3; // in binar: 0011
+$c = $a & $b; // in binar: 0001
+echo $c;
+
+În acest exemplu, se folosește operatorul bitwise AND (&) pentru a efectua o operație bit cu bit între numerele 5 și 3, stocate în variabilele $a și $b, respectiv.
+
+Valoarea binară a numărului 5 este 0101, iar valoarea binară a numărului 3 este 0011. Operația AND bit cu bit compară fiecare bit al celor două numere și returnează 1 doar în cazul în care ambele biți sunt 1. Rezultatul operației AND între 0101 și 0011 este 0001, deoarece singurul bit care este setat la 1 în ambele numere este cel mai puțin semnificativ (LSB).
+
+Prin urmare, când se efectuează operația $c = $a & $b;, valoarea binară a rezultatului este 0001. Acesta reprezintă numărul 1 în sistemul binar. În cele din urmă, când se afișează valoarea variabilei $c cu ajutorul instrucțiunii echo $c;, se afișează valoarea numerică a variabilei, care în acest caz este 1.
+
+$var1 = 5;
+$var2 = &$var1;
+$var1 = 10;
+echo $var2;
+
+3.
+<?php
+
+$a = 5;
+$b = null;
+var_dump(isset($a));
+echo "<br>";
+var_dump(isset($b));
+
+?>
+
+4.
+
+<?php
+
+$variabila = array();
+var_dump(empty($variabila));
+
+?>
+
+5.
+
+$a = array("test", 1, 1.25);
+var_dump($a);// array(3) { [0]=> string(4) "test" [1]=> int(1) [2]=> float(1.25) }
+
+6.
+
+$a = 5;
+unset($a);
+echo $a;
+
+7.
+
+$fructe = array("mere", "pere", "banane");
+ echo $fructe[0]; // asa extragem o valoare din array-ul indexat
+
+ $student = array("nume" => "Ion", "prenume" => "Popescu", "varsta" => 20);
+
+ print_r($student);
+
+.............................
+
+//string
+
+// $firstName = "Will";
+// $lastName = "{$firstName} Smith";
+
+// echo $lastName;
+
+ $firstName = 'Will';
+$lastName = 'Smith';
+
+$name = $firstName . ' ' . $lastName;
+
+echo $name . '<br>';
+
+$name[15] = 'I';
+
+
+var_dump($name);
+
+.................
+HEREDOc/NOWDOC
+
+<?php
+
+$x=1;
+$y=2;
+
+//HEREDOC - poti avea variabile
+//putem folosei full html
+//daca adaugam tab la un text el se salveaza si ocupa un numar mai mare de caractere ca lungime a stringului inserat
+$text = <<<TEXT
+<div>
+<p>Hello world</p>
+</div>
+Line1 $x
+Line2 $y
+Line3
+
+TEXT;
+
+echo nl2br($text);
+
+
+//Nowdoc - nu poti avea variabile
+//utilitate cana avem stringuri multiline cu cu expresii multiple
+//putem avea ghilimele simple sau duble fara a fi necesar sa le dam escape
+$text = <<<'TEXT'
+Line1 $x
+Line2 $y
+Line3
+
+TEXT;
+
+echo '<br/>';
+
+echo nl2br($text);
+
+?>
+
+...............
+<?php
+//NULL - nu are valoare, daca i s-a atribuit constanta Null, daca i s-a dat unset, daca nu a fost definit
+
+$x = null;
+//echo $x;
+//var_dump($x);
+//var_dump(is_null($x));
+//var_dump($x===null);
+
+//unset($x);
+//var_dump($x);
+var_dump((array) $x); // transformam null in empty array
+var_dump((bool) $x);
+
+?>
+.................
+
+<?php 
+//namespace tutorial;
+
+echo __DIR__ . "<br>";
+echo __FILE__ . "<br>";
+//echo __FILE__ . "<br>";
+
+function superfunction(){
+
+  echo __FUNCTION__ . "</br>";
+}
+superfunction();
+
+class hyperClass {
+  public function echo_classname() {
+    echo __CLASS__ . "<br>";
+    echo __METHOD__ . "<br>";
+  }
+
+}
+
+$testObj = new hyperClass;
+$testObj ->echo_classname();
+
+echo __LINE__ . "</br>";
+echo __NAMESPACE__ . "</br>";
+
+?>
