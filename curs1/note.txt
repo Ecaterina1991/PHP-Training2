@@ -2,6 +2,45 @@ ctrl+shift+A - commit apoi mesaj apoi enter
 ctrl+shift+X - pull request
 
 echo "<br>";
+...................
+
+<?php
+for($i=0;$i<10;$i++ ) {  ?>
+
+
+<!-- echo "i =" . $i . "<br>"; -->
+
+<p>This is a sample text</p>
+
+
+<?php }
+
+...................
+
+<?php
+
+$food = "apple";
+
+switch($food) {
+
+  case "apple":
+    echo "apple";
+    break;
+
+  case "cake":
+    echo "cake";
+    break;
+
+  case "tomato":
+    echo "tomato";
+    break;
+
+    default:
+    echo "empty";
+    break;
+}
+
+?>
 ......................
 <?php
 
