@@ -2,6 +2,39 @@ ctrl+shift+A - commit apoi mesaj apoi enter
 ctrl+shift+X - pull request
 
 echo "<br>";
+
+..........................
+
+//Scrie un program care va primi ca input o variabilă numită "nota" și va afișa un mesaj corespunzător în funcție de valoarea notei. Notele valabile sunt între 1 și 10. Mesajele corespunzătoare sunt:
+
+// Pentru notele între 1 și 3: "Nota foarte slabă"
+// Pentru notele între 4 și 6: "Nota slabă"
+// Pentru notele între 7 și 8: "Nota medie"
+// Pentru notele între 9 și 10: "Nota excelentă"
+// Programul trebuie să utilizeze un switch statement pentru a decide mesajul corespunzător în funcție de valoarea notei.
+
+$nota = 10;
+
+switch($nota) {
+  case($nota >= 1 && $nota <=3):
+    echo "Nota foarte slaba";
+    break;
+  case($nota >= 4 && $nota <=6):
+    echo "Nota slaba";
+    break;
+  case($nota >= 7 && $nota <=8):
+    echo "Nota medie";
+    break;
+  case($nota >= 9 && $nota <=10):
+    echo "Nota excelenta";
+    break;
+    default:
+    echo "Va rog sa alegeti o nota intre 1 si 10";
+    break;
+}
+
+//multumesc
+
 ...................
 // Scrie un program care va primi ca input o variabilă numită "luna" și va afișa numărul de zile din acea lună. Programul trebuie să utilizeze un switch statement pentru a decide numărul de zile în funcție de luna specificată.
 
