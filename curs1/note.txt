@@ -3,6 +3,47 @@ ctrl+shift+X - pull request
 
 echo "<br>";
 ...................
+// Scrie un program care va primi ca input o variabilă numită "luna" și va afișa numărul de zile din acea lună. Programul trebuie să utilizeze un switch statement pentru a decide numărul de zile în funcție de luna specificată.
+
+$luna = "Aprilie";
+
+switch($luna) {
+  case("Ianuarie"): 
+    echo "Ianuarie are 31 zile";
+    break;
+  case("Februarie"): 
+    echo "Februarie are 28 zile";
+    break;
+  case("Martie"): 
+    echo "Martie are 31 zile";
+    break;
+  case("Aprilie"): 
+    echo "Aprilie are 30 zile";
+    break;
+  case("Ianuarie"): 
+    echo "Ianuarie are 31 zile";
+    break;
+  case("Ianuarie"): 
+    echo "Ianuarie are 31 zile";
+    break;
+  case("Ianuarie"): 
+    echo "Ianuarie are 31 zile";
+    break;
+  case("Ianuarie"): 
+    echo "Ianuarie are 31 zile";
+    break;
+  case("Ianuarie"): 
+    echo "Ianuarie are 31 zile";
+    break;
+    default:
+    echo "Nu ati introdus corect luna";
+    break;
+}
+
+//multumesc
+?>
+
+...............................
 
 <?php
 for($i=0;$i<10;$i++ ) {  ?>
