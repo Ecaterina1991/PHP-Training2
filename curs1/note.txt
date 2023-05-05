@@ -2,6 +2,46 @@ ctrl+shift+A - commit apoi mesaj apoi enter
 ctrl+shift+X - pull request
 
 echo "<br>";
+........................
+$price = 4;
+$quantity = 10;
+
+echo "<table border='1'";
+echo "<tr><th>Quantity</th>";
+echo "<th>Price</th></tr>";
+
+while ( $quantity <= 100 ) {
+ echo "<tr><td>"; 
+ echo $quantity;
+ echo "</td><td>";
+ echo $price * $quantity;
+ echo "</td></tr>";
+ $quantity = $quantity + 10;
+}
+
+echo "</table>";
+..........................
+
+$i=0;
+
+// while($i>10) {
+
+//   echo $i . "<br>";
+//   $i++;
+
+// }
+
+do {
+
+  echo $i . "<br>";
+  $i++;
+
+}
+while($i>10);
+
+echo $i;
+
+// În general, dacă există o posibilitate ca condiția să nu fie îndeplinită niciodată, atunci este mai bine să folosiți o buclă "while", în timp ce o buclă "do-while" este mai potrivită atunci când trebuie să se execute cel puțin o dată instrucțiunile din buclă, indiferent de condiție.
 
 ..........................
 
