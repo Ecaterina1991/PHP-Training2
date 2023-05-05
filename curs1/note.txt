@@ -2,6 +2,34 @@ ctrl+shift+A - commit apoi mesaj apoi enter
 ctrl+shift+X - pull request
 
 echo "<br>";
+.......................
+
+
+//include
+//require
+
+//include_once
+//require_once
+
+//include va produce un avertisment si scriptul va continua
+//require va produce o eroare fatala si va opri scriptul
+
+include('variable.php');
+
+$name = "Thomas";
+$password = "Thomas12345";
+
+echo $x+$y;
+
+//pentru a modifica usor antet/footer etc pe sute de pagini html simultan, transformam index.html-ul nostru in index.php, il deschidem. salvam separat antetul de ex in antet.php /il stergem din pagina originala, facem la fel cu footerul. 
+// deschidem index.php original si in locurile unde am sters antet/footer inseram codul php care contine si calea catre fisierul anexa. 
+//mai cream un folder numit inc si inauntru vom pune anexele
+//deci
+//<?php require('inc/header.php'); ?>
+//<?php require('inc/footer.php'); ?>
+
+//exemplu introducere link browser
+//http://localhost/Simple-structure/index.php
 ........................
 $price = 4;
 $quantity = 10;
