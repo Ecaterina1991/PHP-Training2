@@ -2,8 +2,79 @@ ctrl+shift+A - commit apoi mesaj apoi enter
 ctrl+shift+X - pull request
 
 echo "<br>";
-.......................
 
+...................
+
+$values = array(1,5,65,8,96,2,45);
+sort($values);
+echo "Lowest values in array are: ";
+
+
+for($i=0; $i<5; $i++) {
+  echo($values[$i] . ",");
+}
+
+
+echo "<br>";
+rsort($values);
+
+echo "Highest values in array are: ";
+
+for($i=0; $i<5; $i++) {
+  echo($values[$i] . ",");
+}
+
+...............
+$arr = array('name' => 'Thomas', 'tel' => '025677252', 'locations' => array('Londra', 'Paris'));
+
+//echo $arr['locations'][1];
+
+// if(array_search("Thomas", $arr)) {
+//   echo "name exists";
+// } else {
+//   echo "Name does not exist";
+// }
+
+$result = array_search("Thomas", $arr);
+
+//echo ($result === true) ? "name exists" : "name does not exist";
+
+unset($arr['locations']);
+var_dump($arr);
+
+...........
+
+$arr = array('name' => 'Thomas', 'tel' => '025677252' );
+
+echo $arr['tel'];
+$arr['name'] = 'Thomas';
+$arr['tel'] = '025677252';
+.....................
+
+$arr = array('pencil', 'notebook', 'book');
+echo $arr[1];
+
+$arr[] = 'pencil';
+$arr[] = 'notebook';
+$arr[] = 'book';
+
+$arr[0] = 'pencil';
+$arr[1] = 'notebook';
+$arr[2] = 'book';
+
+echo $arr;
+
+.......................
+function temperature($temp_f) {
+  $temp_c = ($temp_f - 32)/1.8;
+  return $temp_c;
+}
+
+$farenheit = 68;
+echo "$farenheit degress in farenheit is " . temperature($farenheit) . " degress celsius";
+
+
+...................
 
 function calculate($a = 10, $b = 10) {
   global $x;
