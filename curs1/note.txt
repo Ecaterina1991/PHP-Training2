@@ -5,6 +5,35 @@ echo "<br>";
 
 .......................
 
+//am ramas la 13
+
+//heredoc 
+
+$eu = "Ecaterina";
+
+$cutiuta = 
+<<<DOC
+<h1>Acesta este un string heredoc</h1>
+<p>Ma astept ca eu, randul, sa fiu pe o linie separata doar pentru ca am pile la heredoc.</p>
+$eu a inteles functionalitatea heredoc excelent!
+DOC;
+
+echo $cutiuta;
+
+//newdoc
+
+$tu = "strainul lui \"Camus\"";
+echo $tu;
+
+// $cutiuta2 = <<<'NEW'
+// <h1>Dar ce poti zice despre stringul newdoc?</h1>
+// <p>
+// $tu ai fi fost demascat acum daca nu te-ai fi furisat in acest newdoc inteligent.</p>
+// NEW;
+
+// echo $cutiuta2;
+..........................
+
 $books = array(
   array("Alice in Wonderland", 12.5, 150),
   array("The Adventures of Tom Sawer", 11.25, 73),
