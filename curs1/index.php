@@ -1,13 +1,31 @@
 <?php
-$whitelist = array("home", "page1", "page2", "page3");
+// Parametrii de conexiune la baza de date
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "test";
 
-if(isset($_GET['page'])) {
+// Crearea conexiunii
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-  if(in_array($_GET['page'], $whitelist)) {
-    include($_GET['page'] . ".php");
-  } else {
-    include("home.php");
-  }
+// Verificarea conexiunii
+if ($conn->connect_error) {
+    die("Conexiunea a esuat: " . $conn->connect_error);
 }
 
+// Interogare pentru selectarea datelor din tabel
+$sql = "SELECT * FROM tabelul_meu";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Parcurgerea și afișarea rezultatelor
+    while ($row = $result->fetch_assoc()) {
+        echo "ID: " . $row["id"] . " - Nume: " . $row["nume"] . "<br>";
+    }
+} else {
+    echo "Nu s-au găsit înregistrări în tabel.";
+}
+
+// Închiderea conexiunii
+$conn->close();
 ?>
