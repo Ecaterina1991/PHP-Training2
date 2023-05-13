@@ -3,7 +3,9 @@ ctrl+shift+X - pull request
 
 echo "<br>";
 
-...................................
+.......................
+
+
 
 
 PRIMA CONECTARE REUSITA
@@ -22,6 +24,144 @@ if($mysqli -> connect_errno) {
 printf("connected successfully");
 $mysqli->close();
 ?>
+
+.....................
+SESIUNI CRISTIAN
+
+
+/*
+
+cookies - fisier pe care serverul il salveaza in PC-ul utilizatorului
+sesiuni - sesiunile salveaza informatii in variabile pentru a fi utilizate pe mai multe pagini
+        - informatiile nu sunt stocate pe PC-ul utilizatorului.
+
+Variabile Globale:
+
+$_COOKIE - Contine informatii despre cookie-uri
+$_SESSION - Contine informatii despre sesiuni
+
+setcookie(NUME, VALOARE, VALABILITATE, PATH, DOMENIU);
+
+*/
+
+//setcookie('firstCookie', null, -1);
+
+session_start();
+
+function dd($text) {
+  echo '<pre>';
+  print_r($text);
+  echo '</pre>';
+}
+
+dd($_SESSION);
+
+$name = isset($_SESSION['name']) ? $_SESSION['name'] : '';
+
+if($name) {
+ echo 'Salut, ' .$_SESSION['name'].'<br>'; 
+} else {
+  echo 'Nu esti conectat';
+}
+?>
+
+
+<?php if($name): ?>
+  <a href="session_login.php">Logout</a>
+  <?php else: ?>
+
+<a href="session.php">Go to login</a>
+
+<?php endif;
+
+.................
+SESIUNI CRISTIAN SESSION Page2
+
+
+<?php 
+session_start();
+
+if(isset($_POST)) {
+  $_SESSION['name'] = $_POST['name'];
+  header('Location: page2.php');
+}
+
+?>
+
+
+<form method="POST">
+<input type="text" name="name">
+<button type="submit">Login</button>
+</form>
+
+
+<a href="page2.php">Go back</a>
+...................................
+
+..........................
+
+function db_connect() {
+  //definim conexiunea ca o variabila statica, pentru a evita conexiunea mai mult de o data
+
+  static $connection;
+
+  //incercam conexiunea la baza de date, daca conexiunea inca nu s-a stabilit
+
+if(!isset($connection)) {
+
+$host = "127.0.0.1";
+$name = "root";
+$password = "";
+$dbname = "test";
+
+$connection = mysqli_connect($host, $name, $password, $dbname);
+}
+
+// Daca conexiunea nu a fost un succes, handle the error
+
+if($connection === false) {
+  //Handle error
+  return mysqli_connect_error();
+}
+return $connection;
+
+}
+
+function db_query($query) {
+
+$connection = db_connect();
+
+$result = mysqli_query($connection,$query);
+
+return $result;
+
+}
+
+$result = db_query("SELECT * FROM products");
+
+if($result === false) {
+  die("Query error!");
+} else {
+  $rows = array();
+  while($row = mysqli_fetch_assoc($result)) {
+    $rows[] = $row;
+  }
+  return $rows;
+}
+
+$rows = db_select("SELECT * FROM products");
+if($rows === false) {
+  die("Error");
+} else {
+  foreach($rows as $row) {
+    foreach($row as $key=> $value) {
+      echo ucfirst($key) . ":" . $value . "<br>";
+    }
+    echo ".....................<br>";
+  }
+}
+
+
 
 ..................................
 
