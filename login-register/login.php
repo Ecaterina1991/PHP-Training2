@@ -1,4 +1,4 @@
-<?php
+ <?php
 $host = "127.0.0.1";
 $username = "root";
 $password = "";
@@ -15,4 +15,4 @@ if (mysqli_connect_errno()) {
 //mysqli_connect_errno() este o functie si daca returneaza zero, inseamna ca nu s-au produs erori si codul nu va fi executat
 //mysqli_connect_error() returneaza descrierea textuala a erorii care s-a produs
 //die - opreste executia scriptului
-?>
+?> 

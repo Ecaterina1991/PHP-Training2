@@ -1,4 +1,4 @@
-<?php
+ <?php
 //includ fisierul de conectare la baza de date
 require_once "login.php";
 
@@ -15,6 +15,7 @@ if (isset($_POST['register'])) {
   $query = "SELECT * FROM users WHERE username = '$username'";
   $result = mysqli_query($connection, $query);
 
+
   if(mysqli_num_rows($result) > 0) {
     echo "Numele de utilizator exista!";
   } else {
@@ -22,7 +23,6 @@ if (isset($_POST['register'])) {
     $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
     mysqli_query($connection, $query);
     echo "Inregistrare cu succes! Felicitari!";
-
   }
 }
 
@@ -42,4 +42,4 @@ if (isset($_POST['register'])) {
     <input type="submit" name="register" value="Inregistrare">
   </form>
 </body>
-</html>
+</html> 
