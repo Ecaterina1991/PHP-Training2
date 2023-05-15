@@ -1,6 +1,7 @@
 <?php
 require_once 'connect.php';
 
+//nu am plasat intre ghilimele simple 'connect.php'
 
 
 if(isset($_POST['register'])) {
@@ -23,6 +24,7 @@ if(isset($_POST['register'])) {
     echo "Inregistrare reusita!";
   }
 }
+
  //greseala am scris mysql_num_rows in loc de mysqli_num_rows
   // creare utilizator nou
   //greseala nu am plasat intre ghilimele simple $username si $password
