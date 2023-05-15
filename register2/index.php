@@ -10,10 +10,22 @@ if(isset($_POST['register'])) {
 
   //verific daca mai exista alte nume la fel
 
-  
+  $query = "SELECT * FROM  users WHERE username = '$username'";
+  //greseala nu am plasat intre ghilimele simple $username
+  $result = mysqli_query($connection, $query);
 
+  if(mysqli_num_rows($result) > 0) {
+   echo "Numele de utilizator exista"; 
+  }
+   else {
+    $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+    $result = mysqli_query($connection, $query);
+    echo "Inregistrare reusita!";
+  }
 }
-
+ //greseala am scris mysql_num_rows in loc de mysqli_num_rows
+  // creare utilizator nou
+  //greseala nu am plasat intre ghilimele simple $username si $password
 ?>
 
 
