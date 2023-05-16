@@ -59,8 +59,22 @@
 //multumesc
 
 
-// ???Exercițiu mediu:
+// Exercițiu mediu:
 // Scrieți o buclă care afișează primele 10 numere Fibonacci și pentru fiecare număr, afișați partea întreagă a rezultatului funcției sqrt() aplicată asupra valorii respective.
+
+// $nr_prec = 0;
+// $nr_curent = 1;
+
+// for ($i=0; $i<10; $i++) {
+// $nr_urm = $nr_prec + $nr_curent;
+// echo $nr_urm."-".(int)sqrt($nr_urm)."<br>";
+
+// $nr_prec = $nr_curent;
+// $nr_curent = $nr_urm;
+// }
+
+//multumesc
+
 
 
 // ???Exercițiu mediu:
