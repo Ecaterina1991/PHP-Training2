@@ -1,0 +1,29 @@
+Exercițiu simplu:
+Scrieți o buclă care afișează toate numerele de la 1 la 10 și pentru fiecare număr, afișați valoarea sa absolută utilizând funcția abs().
+
+Exercițiu mediu:
+Scrieți o buclă care afișează primele 20 de numere întregi și pentru fiecare număr, afișați rădăcina sa pătrată utilizând funcția sqrt().
+
+Exercițiu mediu:
+Generați 10 numere aleatoare între -50 și 50 utilizând funcția rand(). Afișați aceste numere și pentru fiecare număr, determinați dacă este pozitiv, negativ sau zero utilizând o structură de control (if-else).
+
+Exercițiu mediu:
+Scrieți o buclă care afișează toate numerele pare de la 1 la 50 și pentru fiecare număr, afișați rezultatul funcției round() aplicată asupra valorii respective.
+
+Exercițiu mediu:
+Generați 5 numere aleatoare între 1 și 100 utilizând funcția rand(). Afișați aceste numere și determinați suma lor utilizând o buclă și o variabilă auxiliară.
+
+Exercițiu mediu:
+Scrieți o buclă care afișează primele 10 numere Fibonacci și pentru fiecare număr, afișați partea întreagă a rezultatului funcției sqrt() aplicată asupra valorii respective.
+
+Exercițiu mediu:
+Generați un număr aleatoriu între 1 și 100 utilizând funcția rand(). Apoi, scrieți o buclă care să determine cel mai mic multiplu comun (CMMD) dintre acel număr generat și toate numerele de la 1 la 10 utilizând funcția min().
+
+Exercițiu mediu:
+Scrieți o buclă care afișează toate numerele de la 1 la 100 și pentru fiecare număr, verificați dacă acesta este prim utilizând o structură de control (if-else) și funcția sqrt().
+
+Exercițiu mediu:
+Generați 10 numere aleatoare între -100 și 100 utilizând funcția rand(). Afișați aceste numere și determinați produsul valorilor negative utilizând o buclă și o variabilă auxiliară.
+
+Exercițiu mediu:
+Scrieți o buclă care afișează primele 15 numere perfecte și pentru fiecare număr, verificați dacă acesta este perfect utilizând o structură de control (if-else) și funcția sqrt().
