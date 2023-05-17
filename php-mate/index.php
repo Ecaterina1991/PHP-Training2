@@ -225,6 +225,10 @@ putem avea minim 2 expresii matematice
 //     break;
 // }
 
+
+
+
+
 // Se citesc varsta ($v), inaltimea($i)si sexul($s) unei persoane.
 //     Sa se calculeze greutatea($g) ideala, dupa formula :
 // $g =50+0.75*($i-150)+($v-20)/4,   pentru baieti
@@ -233,34 +237,36 @@ putem avea minim 2 expresii matematice
 // $v = rand(5,18);
 // $i = rand(80, 120);
 // $g = rand(23, 50);
-// $s_m = "masculin";
-// $s_f = "feminin";
-
-// if($s_m = "masculin") {
+// $s = rand(1,2);
 // $g = 50 + 0.75*($i-150)+($v-20)/4;
-// echo $g;
+
+// if($s==1) {
+// echo "Pentru Baieti, de inaltime $i, varsta $v, greutatea ideala este $g";
 // }
-// else if ($s_m = "feminin") {
+// else {
 //   $g = $g * 0.9;
-//   echo $g;
+//   echo "Pentru fete de inaltime $i, varsta $v, greutatea ideala este $g";
 // }
 
-// $x = rand(0,1);
-// $sum = 0;
+// Intr-un parc se joaca 3 copii care au greutatile a,b,c. Sa se stabileasca
+//      daca se pot aseza pe un balansoar astfel incat acesta sa stea in echilibru.
 
-// for ($i=rand(1,31); $i>0; $i--) {
-//    $expr = $x * pow(2, $i);
-//    $sum = $expr + $sum;
+//
+$y = rand(2,32);// => $x = rand(0,1);
+
+$sum = 0;
+
+
+
+for ($i=rand(1,31); $i>0; $i--) {
+   $expr = $x * pow(2, $i);
+   $sum = $expr + $sum;
    
-// }
-//  $nr_dec = $sum + (1 * pow(2, ($i+1)));
-//  echo $nr_dec;
+}
+ $nr_dec = $sum + (1 * pow(2, ($i+1)));
+ //echo $nr_dec;
  
 
 
-// $secret_nr = (1 * pow(2,3)) + ($x * pow(2,2)) + ($x * pow(2,1)) + ($x * pow(2,0));
-
-
-
-
+//$secret_nr = (1 * pow(2,3)) + ($x * pow(2,2)) + ($x * pow(2,1)) + ($x * pow(2,0));
 ?>
