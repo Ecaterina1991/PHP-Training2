@@ -253,24 +253,57 @@ putem avea minim 2 expresii matematice
 
 //
 
-$sum = 0;
+// $sum = 0;
+// $i_init = rand(2,31);
+// echo "Puterea exponentiala introdusa in ecuatie pentru a genera numarul binar: ".$i_init."<br>";
 
-for ($i=rand(1,31); $i>0; $i--) {
-$y = rand(2,32);// => $x = rand(0,1);
-$x = rand(0,1);
-while(1) {
-   $x=str_replace($y, $x, $x);
-   //echo($x);
-   break;
-}
-   $expr = $x * pow(2, $i);
-   $sum = $expr + $sum;
-   global $sum;
-}
- $nr_bin = $sum + (1 * pow(2, ($i+1)));
- echo $nr_bin;
+// for ($i=$i_init; $i>0; $i--) {
+// $y = rand(2,32);// => $x = rand(0,1);
+// $x = rand(0,1);
+// while(1) {
+//    $x=str_replace($y, $x, $x);
+//    //echo($x);
+//    break;
+// }
+//    $expr = $x * pow(2, $i);
+//    $sum = $expr + $sum;
+//    echo $sum."<br>";
+// }
+//  $nr_bin = $sum + (1 * pow(2, ($i_init+1)));
+//  echo "Numarul reprezentat in baza 10: ".$nr_bin;
+
+//1111 = (1 × 2³) + (1 × 2²) + (1 × 2¹) + (1 × 2⁰) = 15
 
 
+// $sum = 0;
+// $i_init = rand(0,32);
+// echo "Puterea exponentiala introdusa in ecuatie pentru a genera numarul binar: ".$i_init."<br>";
+
+// for ($i=$i_init; $i>0; $i--) {
+//   //generare numar random 0 sau 1 pentru completarea numarului binar/////////////////
+// $y = rand(2,32);// => $x = rand(0,1);
+// $x = rand(0,1);
+// echo $x."<br>";
+// while(1) {
+//    $x=str_replace($y, $x, $x);
+//    //echo($x);
+//    break;
+// }
+// /////////////////////////////////////////////////////
+
+// $expr = $x * pow(2, $i);
+// //echo $expr;
+//  $sum = $expr + $sum;
+// //echo $sum."<br>";
+// $sum_final = $sum;
+// global $sum_final;
+// echo $sum_final."<br>";
+// }
+
+
+
+//  $nr_bin = $sum_final + (1 * pow(2, ($i_init+1)));
+//  echo "Numarul reprezentat in baza 10: ".$nr_bin;
 
 
 ?>
