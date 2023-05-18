@@ -252,21 +252,25 @@ putem avea minim 2 expresii matematice
 //      daca se pot aseza pe un balansoar astfel incat acesta sa stea in echilibru.
 
 //
-$y = rand(2,32);// => $x = rand(0,1);
 
 $sum = 0;
 
-
-
 for ($i=rand(1,31); $i>0; $i--) {
+$y = rand(2,32);// => $x = rand(0,1);
+$x = rand(0,1);
+while(1) {
+   $x=str_replace($y, $x, $x);
+   //echo($x);
+   break;
+}
    $expr = $x * pow(2, $i);
    $sum = $expr + $sum;
-   
+   global $sum;
 }
- $nr_dec = $sum + (1 * pow(2, ($i+1)));
- //echo $nr_dec;
- 
+ $nr_bin = $sum + (1 * pow(2, ($i+1)));
+ echo $nr_bin;
 
 
-//$secret_nr = (1 * pow(2,3)) + ($x * pow(2,2)) + ($x * pow(2,1)) + ($x * pow(2,0));
+
+
 ?>
