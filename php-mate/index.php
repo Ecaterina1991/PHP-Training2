@@ -1,4 +1,31 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+</head>
+<body>
+  <?php $a = 11;?>
+
+<?php if($a==10) { ?>
+  <p style=color:green;>a este 10 sigur dupa ora zece</p>
+ 
+<?php } else { ?>
+  <p style=font-size:22px;color:orange;> a trebuie sa fie altceva!</p>
+ 
+  <?php } ?>
+</body>
+</html> -->
+
 <?php
+
+
+
+
+
+
 // Exercițiu simplu:
 // Scrieți o buclă care afișează toate numerele de la 1 la 10 și pentru fiecare număr, afișați valoarea sa absolută utilizând funcția abs().
 
@@ -301,9 +328,223 @@ putem avea minim 2 expresii matematice
 // }
 
 
-
 //  $nr_bin = $sum_final + (1 * pow(2, ($i_init+1)));
 //  echo "Numarul reprezentat in baza 10: ".$nr_bin;
+
+// $x = "100.52";
+// //var_dump(is_numeric($x));
+
+// $cast = (intval($x));
+// var_dump($cast);
+
+// $arr = [4, 9, 12.2548, 36, 5, -5];
+// $abs = abs(min($arr));
+// //echo $abs;
+// $sqrt = sqrt($arr[0]);
+// //echo $sqrt;
+
+// $round = round($arr[2], 2);
+// echo $round;
+
+//define("WELLCOME", "Bine ati venit pe acest site!");
+// //echo WELLCOME;
+
+// define("REPEAT", "Bine ati venit pe acest site din nou!");
+// echo REPEAT;
+
+// define("CARTI", ["Jurnalul Virginiei Woolf", "Punct-Contrapunct de Aldous Huxley", "TU de Matei Calinescu"]);
+
+// //echo CARTI[1];
+
+// function verificActualitate() {
+//   echo CARTI[0];
+// }
+
+// verificActualitate();
+
+
+//$x = 10;
+//unset($x);
+
+// $y = $x ?? "$x nu exista";
+// echo $y;
+
+// $a = 5;
+// $b = 6;
+
+// if(($a<$b) xor ($b==6)) {
+//   echo "Adevar curat zic: nu sunt egale!";
+// }
+// else {
+//   echo "O contradictie oarecare";
+// }
+
+// $t = date("H");
+// var_dump($t);
+
+// $t = date("Y-m-d"); //data numerica
+// var_dump($t);
+
+// $t = date("d-m-Y"); //data numerica
+// var_dump($t);
+
+// $t = date("F d, Y"); //F inseamna luna scrisa cu litere
+// var_dump($t);
+
+// $culoare = "portocaliu";
+
+// $result = match($culoare) {
+
+// "rosu" => "este culoarea rosie",
+// "portocaliu" => "culoarea portocalie",
+// "verde" => "culoarea verde",
+
+// };
+
+// echo $result;
+
+//cu while loop genereaza numerele intre 100 si 150
+
+//$nr = 0 ;
+
+// while($nr<150) {
+//  $nr++;
+//  echo $nr."<br>";
+// }
+
+//while($nr<50): $nr++; echo $nr."<br>"; endwhile;
+
+//afisati numerele de la 0 la 200 din 30 in 30 cu while loop
+
+// $nr = 0;
+
+// // while($nr<200) {
+// //   $nr+=30;
+// //   echo $nr."<br>";
+// // }
+
+// do {
+//   $nr+=10;
+//   echo $nr."<br>";
+// } while ($nr<100);
+
+//afiseaza nr de la 20 la 0 descrescator cu bucla for si fara a defini vreo variabila in afara buclei
+
+// for ($i=0, $x=20; $i<=20; $i++, $x--) {
+//   echo $x."<br>";
+// }
+
+//$arr = array(1,2,3,4,5);
+
+// for($i=0; $i<=sizeof($arr)-1; $i++) {
+//   echo $arr[$i].", ";
+// }
+
+//for($i=0; $i<=sizeof($arr)-1; $i++): echo $arr[$i]."-"; endfor;
+
+// foreach($arr as $z) {
+//   echo $z . "---";
+// }
+
+// foreach($arr as $k => $v) {
+//   echo "$k reprezinta indexul pentru $v"."<br>";
+// }
+
+//foreach($arr as $k => $v): echo "$k index pentru $v"."<br>"; endforeach;
+
+// for($i=0; $i<10; $i++) {
+//   echo $i;
+//   if ($i==5) break;
+// }
+
+// $i = 0;
+// while ($i++ < 10) {
+//   switch($i) {
+//     case 1: continue 2;
+//   }
+// }
+
+// $string = "Este\ro\nseara\nde\nmai \u{C2A9};:Primavara";
+// echo $string;
+
+//transformati stringul zalut in salut
+
+// $string = "zalut";
+// $string[0] = "s";
+// echo $string;
+
+//folosind strlen functie modificati stringul zara in zarr
+
+// $s = "zara";
+// //$s[strlen($s)-1] = "r";
+// //echo $s;
+
+// // modifica stringul zara in zaza cu str_replace
+
+// // $modificare = str_replace("r", "z", "$s");
+// // echo $modificare;
+
+// //transforma stringul zara in magazinul zara cu substr_replace
+
+// $adaugare = substr_replace($s, "magazinul ", 0, 0);
+// //echo $adaugare; //magazinul zara
+
+// $substr = substr($adaugare, 0, 3);
+// //echo $substr;
+// //echo strtoupper($substr);
+// //echo strtolower($substr);
+// $strpos = strpos($substr, "g");
+// //echo $strpos;
+
+// $length = strlen($adaugare);
+// echo $length;
+
+// $a = [5,8,9,2];
+
+// $a[] = 7;
+
+// print_r($a);
+
+//array asociativ
+
+//$a =["a" => "prima litera alfabet", "b" => "a doua litera alfabet", "a treia litera alfabet"];
+//print_r($a);
+//var_dump($a["b"].$a["c"]);
+
+// $a =["a" => "prima litera alfabet", "b" => "1", "c" => "2"];
+// //print_r($a);
+// var_dump($a["b"].$a["c"]);
+
+// $a = [["soare","vara"],["zapada","iarna"],[5,6]];
+
+// $a[1][0] = "gheata";
+// //print_r($a);
+// //echo $a[2][1];
+
+// $string = $a[0][1] . " exista mult " . $a[0][0];
+// echo $string;
+
+//$a = 12;
+
+// if ($a == 5): echo "a este 5";
+// elseif($a == 10): echo "a este 10";
+// else: "a este un numar oarecare";
+// endif;
+
+// switch($a):
+//   case 9: echo "a este 9"; break;
+//   case 10: echo "a este 10"; break;
+//   case 11: echo "a este 11"; break;
+//   default: echo "nu stiu ce e a"; break;
+// endswitch;
+
+// match($x) {
+//   1 => $output = 'True',
+//   2 => $output = 'False',
+//   default => $output = 'Unknown'
+// };
+// echo $output;
+
 
 
 ?>
