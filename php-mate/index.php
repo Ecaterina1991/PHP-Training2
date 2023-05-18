@@ -545,6 +545,43 @@ putem avea minim 2 expresii matematice
 // };
 // echo $output;
 
+// function noapteBuna($a, $b="strainule sau straino!") {
+//   echo $a . $b . "!"."<br>";
+// }
+
+// noapteBuna("Noapte buna", b: " Printul meu");
+// noapteBuna("Noapte buna ");
+// noapteBuna("Noapte buna ", "Stefan");
+// noapteBuna("Noapte buna ");
+// noapteBuna("Noapte buna ", "Cecilia");
+// noapteBuna("Noapte buna ");
+// noapteBuna("Noapte buna ", "Eduard");
+// noapteBuna("Noapte buna ", "Alexandra");
+//pg 50
+
+
+
+
+// Intr-un parc se joaca 3 copii care au greutatile a,b,c. Sa se stabileasca
+//      daca se pot aseza pe un balansoar astfel incat acesta sa stea in echilibru.
+
+// $a = rand(10,40);
+// $b = rand(10,40);
+// $c = rand(10,40);
+
+// if ($a+$b==$c || $b+$c==$a || $c+$a==$b) {
+//   echo "Cei doi copii care au impreuna aceeasi greutate cu cel de-al treilea copil se pot aseza in balansoar doi intr-o parte si cel mai greu in cealalta parte";
+// } elseif ($a==$b || $b==$c || $c==$a){
+//   echo "Cei doi copii care au greutati egale se pot aseza unul intr-o parte si celalalt in cealalta parte a balansoarului";
+// } else {
+//   echo "Desi copiii se pot aseza in balansoar, acestia nu vor fi in echilibru.";
+// }
+
+
+
+
+
+
 
 
 ?>
