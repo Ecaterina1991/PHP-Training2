@@ -579,9 +579,243 @@ putem avea minim 2 expresii matematice
 
 
 
+// $date = date('F, d-Y');
+// echo $date;
+
+//Trebuie sa scrieti un program care sa permita utilizatorului sa ghiceasca un numar imaginar; definiti numarul dorit in cod. De asemenea pentru a anunta utilizatorul cat de aproape este raspunsul, anuntati-l prin mesaj daca diferenta dintre numarul ghicit si numarul dat este mai mica decat 10. Incercarea se introduce prin parametrul GET numit "number".
+
+// $my_number = 9;
+// $number = $_GET["number"];
+
+// //echo $number;
+
+// if ($my_number==$number) {
+//   echo "Felicitari! Ati ghicit numarul!";
+// }
+// else if(abs($number-$my_number) < 10) {
+//   echo "Sunteti aproape sa ghiciti!";
+// } 
+// else {
+//   echo "Mai incercati!";
+// }
+
+//Pe pagina exista variabila $page. In variabila este permisa existenta uneia din doua valori pe baza carora va fi incarcata pagina. Cele doua valori sunt "index" si "products". Daca valoarea este "index", se incarca pagina index.html, daca valoarea este "products", se incarca pagina products.html. Daca nicio valoare nu coincide cu valoarea solicitata, se incarca pagina login.html.
+
+// $page = "index"; //products
+
+// if ($page == "index") {
+//   $page="index.html";
+// }
+// elseif ($page=="products"){
+//   $page="products.html";
+// } 
+// else {
+//   $page="login.html";
+// }
+
+// echo $page;
+
+// Exercițiul 1: Afișarea numerelor pare
+// Scrie un program PHP care afișează toate numerele pare de la 1 la 20.
+
+// $i=0;
+
+//  while ($i<=20) {
+//   $i++;
+//   if($i%2==0) { 
+//     echo $i."<br>";
+//   }
+   
+// };
+
+
+
+//Exercițiul 2: Suma numerelor impare
+//Scrie un program PHP care calculează suma numerelor impare de la 1 la 50 folosind o buclă while.
+
+// $sum = 0;
+// $i = 0;
+
+// while($i<50) {
+
+//  $i++;
+//   if(!($i%2==0)) {
+//   //echo $i;
+//   $sum += $i;
+//   }
+// }
+
+// echo $sum;
+
+
+// Exercițiul 3: Factorialul unui număr
+// Scrie un program PHP care calculează factorialul unui număr dat. Folosește o funcție recursivă pentru a realiza acest lucru.
+
+// $n = 5;
+// $result=1;
+// (5-1)//4
+// *
+// (5-2)//3
+// *
+// (5-3)//2
+// *
+// (5-4)//1
+// =nr factorial 120
+
+//$factorial = (n-1)*(n-2)*n-...
+
+// for ($i=1; $i<$n; $i++) {
+//   $expr = ($n-$i);
+//   $result *= $expr;
+// }
+// echo $result;
+
+// Exercițiul 2: Suma cifrelor unui număr
+//Scrie un program PHP care calculează suma cifrelor unui număr dat.
+
+// $numar = 54879222588;
+// $sum = 0;
+
+// $str_numar = strval($numar);
+
+
+// for($i=0; $i<strlen($str_numar); $i++){
+//   $cifra = (int)$str_numar[$i];
+//   $sum+= $cifra;
+// }
+
+// echo $sum;
+
+
+
+// $nr = 12546.2354878;
+
+// $nr_formatat = number_format($nr, 2, ".", ",");
+// echo $nr_formatat;
+
+// Sa se progrmaeze un senzor care determina cantitatea de carburant aflata in rezervor.
+//  Daca candtitatea de combustibil scade sub 10 litri sa afiseze un mesaj de avertizare cu portocaliu: "Va rog sa alimentati!“.
+//  Daca cantitatea de combustibil este< 1 sa afise cu rosu mesajul:"Ati ramas fara combustibil. Trebuie sa ne oprim!“
+//va exista variabila $viteza = nu nr random 60-80
+
+
+
+// Exercițiul 3: Tabel de înmulțire
+// Scrie un program PHP care afișează un tabel de înmulțire de la 1 la 10.
+
+
+//1*1 = 
+//1*2 =
+//1*3...
+
+// $unu = 1;
+
+// for ($i=1; $i<=10; $i++) {
+//   $produs = $unu*$i;
+//   echo "$unu "."* ". "$i"." = "."$produs"."<br>";
+// }
+
+
+
+// Exercițiul 1: Afișarea numerelor prime
+// Scrie un program PHP care afișează toate numerele prime de la 1 la 50.
+
+//$nr%$x ==0 - $x este divizorul lui $nr
+
+// $nr=1;
+
+
+// while($nr<= 50) {  
+
+// $divizor = 0;
+
+//   for($i=1; $i<=$nr; $i++) {
+//     if($nr%$i==0) {
+//       $divizor++;
+//     }
+//   }
+
+//   if($divizor==2) {
+//     echo $nr."<br>";
+//   }
+  
+//   $nr++;
+// }
 
 
 
 
 
+// Exercițiul 3: Verificarea unui număr perfect
+// Scrie un program PHP care verifică dacă un număr dat este perfect. Un număr perfect este un număr întreg pozitiv care este egal cu suma divizorilor săi proprii.
+
+//nr % divizor == 0
+//0 calculam divizorii nr
+//1 afisam divizorii unui numar intreg pozitiv
+//2 facem suma divizorilor
+//3. verificam conditia numar perfect == suma
+
+// $nr = 28;
+// $divizor=0;
+// $sum = 0;
+
+// for ($i=1; $i <= $nr / 2; $i++) {
+
+//   $divizor = $i;
+
+// if($nr%$divizor==0) {
+//   //echo $divizor."<br>";
+//   $sum = $sum + $divizor;
+// }
+// }
+
+// if ($nr == $sum) {
+//   echo "Numarul $nr este un numar perfect";
+// } else {
+//   echo "Numarul $nr nu este un numar perfect";
+// }
+
+// $nr = 28;
+// $sum = 0;
+
+// for ($i = 1; $i <= $nr / 2; $i++) {
+//   if ($nr % $i == 0) {
+//     $sum += $i;
+//   }
+// }
+
+// if ($nr == $sum) {
+//   echo "Numărul $nr este un număr perfect";
+// } else {
+//   echo "Numărul $nr nu este un număr perfect";
+// }
+
+
+// Exercițiul 4: Verificarea palindromului
+// Scrie un program PHP care verifică dacă un număr dat este un palindrom. Un număr palindrom este un număr care rămâne același atunci când cifrele sale sunt inversate.
+
+// $nr = 1221;
+// $nr_str = strval($nr);
+
+// if((int)$nr_str[0]==(int)$nr_str[3] && (int)$nr_str[1]==(int)$nr_str[2]) {
+//   echo "Numarul $nr este un palindrom.";
+// }
+// else {
+//   echo "Numarul $nr nu este un palindrom.";
+// }
+
+
+
+// Exercițiul 5: Găsirea cifrei maxime
+// Scrie un program PHP care primește un număr de la utilizator și găsește și afișează cifra maximă din acest număr.
+
+$nr = 456542698;
+
+$arr = str_split($nr);
+//print_r($arr);
+
+$max = max($arr);
+echo $max;
+
+//multumesc
 ?>
