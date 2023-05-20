@@ -1227,5 +1227,31 @@ $arr_string = explode(" ", $string3);
 //   echo "Avem 5 in array" ;
 // }
 
+// $inceput = "Aceasta este o variabila importanta";
+// $integer = 4;
+
+// $variabila_importanta = sprintf("%s si fiti cu ochii in %d sa nu o pierdeti!", $inceput, $integer);
+// //echo $variabila_importanta;
+
+// if($variabila_importanta) {
+//   echo "variabila nu s-a pierdut si are valoarea true";
+// }
+
+//arata-ti intelegerea functiei print utilizand-o intr-o expresie
+
+// $a = 1;
+
+// $a ? print "TRUE" : print "FALSE";
+
+$arr_dosar = [
+[1, "Viorel", "Cascaval", 55555555],
+[2, "Elena", "Strungareata", 888888888],
+[3, "George", "Agricol", 44444444],
+];
+
+for($i=0; $i<count($arr_dosar); $i++) {
+echo "In linia " . $arr_dosar[$i][0] . " a dosarului figureaza " . $arr_dosar[$i][1] . " " . $arr_dosar[$i][2] . " cu ID-ul " . $arr_dosar[$i][3]."."."<br>";
+}
+
 
  ?>
