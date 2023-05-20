@@ -904,19 +904,115 @@ array_push($_multi_arr, $ultimul_array);
  //print_r($arr_trei) ;
  array_pop($arr_trei);
 // echo($stergere);
-  print_r($arr_trei);
+  //print_r($arr_trei);
 
 
 
 // Accesați și afișați o valoare specifică dintr-un array multidimensional.
+
+$m_arr = [
+[1,2,3,5,9],
+["colectie" => ["viniluri", "carti", "stilouri"]],
+["usa", "scaun"]
+];
+
+//accesez scaun
+//echo $m_arr[2][1];
+//
+
+//schimb valoarea lui scaun
+
+$m_arr[2][1] = "tabla";
+//print_r($m_arr);
+
+//accesez valoare carti
+
+//echo $m_arr[1]["colectie"][1];
+
+//schimb valoarea stilouri
+
+$m_arr[1]["colectie"][2] = "vinuri";
+
+//print_r($m_arr);
+
+//afisez al doilea subarray
+
+//print_r($m_arr[1]);
+
+//afisez arrayul  ["viniluri", "carti", "stilouri"]
+
+//print_r($m_arr[1]["colectie"]);
+
+//mai adaug un element in acest array
+array_push($m_arr[1]["colectie"], "monede vechi");
+
+
+//adaug un nou element la inceputul primului subarray
+
+array_unshift($m_arr[0], -1);
+//print_r($m_arr);
+
+
+
+
 // Creați un array asociativ pentru a stoca informații despre o carte.
+
+
+//$carte = ["nr pagini" => 300, "autor" => "Cezare Pavese", "titlu" => "noapte de sarbatoare"];
+
+
+
 // Accesați și afișați o valoare specifică dintr-un array asociativ.
+
+//afisez valoarea cheii autor
+
+//echo $carte["autor"];
+
 // Adăugați o nouă valoare într-un array indexat.
+
+$arr_indexat = ["mere", "pere", "portocale"];
+
+//prima metoda
+
+$arr_indexat[] = "banane";
+
+
+//a doua metoda
+//adaug un nou element la inceputul arrayului
+
+array_unshift($arr_indexat, "caise");
+
+
+//a treia metoda adaug un nou element la sfarsitul arrayului
+
+array_push($arr_indexat, "afine");
+//print_r($arr_indexat);
+
+
 // Adăugați o nouă valoare într-un array asociativ.
+
+$carte = ["nr pagini" => 300, "autor" => "Cezare Pavese", "titlu" => "noapte de sarbatoare"];
+
+//1 metoda
+
+$carte["ISBN"] = 45515486798;
+
+
 // Utilizați funcția printf pentru a formata și afișa un mesaj în PHP.
 // Exemplu de formatare a unei șiruri de caractere cu printf.
 // Exemplu de formatare a unui număr întreg cu printf.
 // Exemplu de formatare a unui număr zecimal cu printf.
+
+// $nr = 1000;
+// $string = "PHP";
+// $float = 0.78954;
+
+// printf("I love %s something like %d times more than JavaScript and %.2f times more than CSS!!!", $string, $nr, $float);
+
+$string = "professional activity";
+$nr = 100;
+
+//printf("If your work with me is the result of your %s is %d times better than if a certain person is paying you to focus on me.", $string, $nr);
 
 
 
