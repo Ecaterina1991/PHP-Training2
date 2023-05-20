@@ -809,13 +809,115 @@ putem avea minim 2 expresii matematice
 // Exercițiul 5: Găsirea cifrei maxime
 // Scrie un program PHP care primește un număr de la utilizator și găsește și afișează cifra maximă din acest număr.
 
-$nr = 456542698;
+// $nr = 456542698;
 
-$arr = str_split($nr);
+// $arr = str_split($nr);
+// //print_r($arr);
+
+// $max = max($arr);
+// echo $max;
+
+// //multumesc
+
+
+
+//diferenta intre echo si print
+
+// echo este o instructiune. print este o functie. print returneaza 1. echo poate afisa mai multe valori. echo afiseaza, nu returneaza valori, daci nu poate fi folosit ca valoare booleana in conditiile structurilor de decizie. print afiseaza o valoare, 1. printf ofera functia de formatare specifica cu argumente. print_r afiseaza structurat un array. var_dump afiseaza si valoarea si tipul de date.
+
+
+
+// Utilizați funcția print pentru a afișa un mesaj în PHP.
+$var = "Salut";
+//print($var);
+
+// Utilizați instrucțiunea echo pentru a afișa un mesaj în PHP.
+
+//echo "mesaj";
+
+// Creați un array indexat cu câteva elemente.
+
+$arr = ['septembrie', 'octombrie', 'decembrie'];
 //print_r($arr);
 
-$max = max($arr);
-echo $max;
+// Accesați și afișați un element specific dintr-un array indexat.
 
-//multumesc
+//afiseaz al doilea element din array
+//print_r($arr[1]);
+
+//schimb valoarea ultimului element de arary
+$arr[2] = "iulie";
+//print_r($arr);
+
+//adaug un element nou in array
+
+$arr[] = "o luna anonima";
+//print_r($arr);
+
+//adaug un element nou in array
+$element = "alta luna anonima";
+array_push($arr, $element);
+
+
+//sterg ultimul element din array
+array_pop($arr);
+
+
+//adaug un eleemnt de array la inceputul sirului
+$element2 = "o luna de iarna";
+array_unshift($arr, $element2);
+
+//sterg oprimul element din array
+array_shift($arr);
+//print_r($arr);
+
+
+// Creați un array multidimensional pentru a stoca informații despre persoane.
+//o variabila se poate defini si cu underscore la inceputul denumirii variabiliei. acelasi lucru nu este valabil legat de numere
+$_multi_arr = array("cer" => array("pasari" => "zboara", "soare" => "straluceste", "stele" => "sclipesc"), "copac" => array("frunze", "tulpina", "radacina"));
+//print_r($_multi_arr);
+
+//arrayul meu multidimensional contine doua arrayuri asociative cheie valoare cu cheile cer si copac si valorile reprezentate de cate un array. primul array contine un array asociativ si al doilea un array indexat
+
+//afisez valoarea straluceste
+
+
+$val = $_multi_arr["cer"]["soare"];
+//echo $val;
+
+//modific valoarea tulpina cu valoarea zebra
+
+$_multi_arr["copac"][1] = "zebra";
+
+
+//adaug un al treilea array in arrayul multidimensional
+$_multi_arr[] = array(1,2,3);
+
+
+//adaug un al patrulea array la sfarsitul arrayului meu multidimensional
+$ultimul_array = [45, 56, 63, "lingura"];
+array_push($_multi_arr, $ultimul_array);
+
+
+//????sterg ultimul element din al treilea array din arrayul multidimensional, deci cifra 3
+ $arr_trei = $_multi_arr[0];
+ //print_r($arr_trei) ;
+ array_pop($arr_trei);
+// echo($stergere);
+  print_r($arr_trei);
+
+
+
+// Accesați și afișați o valoare specifică dintr-un array multidimensional.
+// Creați un array asociativ pentru a stoca informații despre o carte.
+// Accesați și afișați o valoare specifică dintr-un array asociativ.
+// Adăugați o nouă valoare într-un array indexat.
+// Adăugați o nouă valoare într-un array asociativ.
+// Utilizați funcția printf pentru a formata și afișa un mesaj în PHP.
+// Exemplu de formatare a unei șiruri de caractere cu printf.
+// Exemplu de formatare a unui număr întreg cu printf.
+// Exemplu de formatare a unui număr zecimal cu printf.
+
+
+
 ?>
