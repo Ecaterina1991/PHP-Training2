@@ -910,11 +910,11 @@ array_push($_multi_arr, $ultimul_array);
 
 // Accesați și afișați o valoare specifică dintr-un array multidimensional.
 
-$m_arr = [
-[1,2,3,5,9],
-["colectie" => ["viniluri", "carti", "stilouri"]],
-["usa", "scaun"]
-];
+// $m_arr = [
+// [1,2,3,5,9],
+// ["colectie" => ["viniluri", "carti", "stilouri"]],
+// ["usa", "scaun"]
+// ];
 
 //accesez scaun
 //echo $m_arr[2][1];
@@ -922,7 +922,7 @@ $m_arr = [
 
 //schimb valoarea lui scaun
 
-$m_arr[2][1] = "tabla";
+//$m_arr[2][1] = "tabla";
 //print_r($m_arr);
 
 //accesez valoare carti
@@ -931,7 +931,7 @@ $m_arr[2][1] = "tabla";
 
 //schimb valoarea stilouri
 
-$m_arr[1]["colectie"][2] = "vinuri";
+//$m_arr[1]["colectie"][2] = "vinuri";
 
 //print_r($m_arr);
 
@@ -944,12 +944,12 @@ $m_arr[1]["colectie"][2] = "vinuri";
 //print_r($m_arr[1]["colectie"]);
 
 //mai adaug un element in acest array
-array_push($m_arr[1]["colectie"], "monede vechi");
+///array_push($m_arr[1]["colectie"], "monede vechi");
 
 
 //adaug un nou element la inceputul primului subarray
 
-array_unshift($m_arr[0], -1);
+//array_unshift($m_arr[0], -1);
 //print_r($m_arr);
 
 
@@ -970,32 +970,32 @@ array_unshift($m_arr[0], -1);
 
 // Adăugați o nouă valoare într-un array indexat.
 
-$arr_indexat = ["mere", "pere", "portocale"];
+//$arr_indexat = ["mere", "pere", "portocale"];
 
 //prima metoda
 
-$arr_indexat[] = "banane";
+//$arr_indexat[] = "banane";
 
 
 //a doua metoda
 //adaug un nou element la inceputul arrayului
 
-array_unshift($arr_indexat, "caise");
+//array_unshift($arr_indexat, "caise");
 
 
 //a treia metoda adaug un nou element la sfarsitul arrayului
 
-array_push($arr_indexat, "afine");
+//array_push($arr_indexat, "afine");
 //print_r($arr_indexat);
 
 
 // Adăugați o nouă valoare într-un array asociativ.
 
-$carte = ["nr pagini" => 300, "autor" => "Cezare Pavese", "titlu" => "noapte de sarbatoare"];
+// $carte = ["nr pagini" => 300, "autor" => "Cezare Pavese", "titlu" => "noapte de sarbatoare"];
 
 //1 metoda
 
-$carte["ISBN"] = 45515486798;
+// $carte["ISBN"] = 45515486798;
 
 
 // Utilizați funcția printf pentru a formata și afișa un mesaj în PHP.
@@ -1009,11 +1009,198 @@ $carte["ISBN"] = 45515486798;
 
 // printf("I love %s something like %d times more than JavaScript and %.2f times more than CSS!!!", $string, $nr, $float);
 
-$string = "professional activity";
-$nr = 100;
+// $string = "professional activity";
+// $nr = 100;
 
-//printf("If your work with me is the result of your %s is %d times better than if a certain person is paying you to focus on me.", $string, $nr);
+//printf("If your work with me is the result of your %s is %d%% better than if a certain person is paying you to focus on me.", $string, $nr);
+
+//%% echivaleaza cu % cand vrem sa il afisam
+
+// $nr = 1234567.4564897489;
+
+//echo number_format($nr, 2, ".", ",")."$ baby";
+
+//in urma formatarii integer devine string
+
+//$_SERVER - informatii despre server si mediul in care ruleaza scriptul php.ex $_SERVER['SERVER_NAME'];
+
+//$_REQUEST => get + post + cookie
+
+//echo $_SERVER['SERVER_NAME'];\
+
+//scrie un exemplu cu care sa iti demonstrezi intelegerea de variabila variabila
+
+// $variabila1 = "gogoasa";
+// $$variabila1 = "alune";
+
+//echo $gogoasa;
+
+//in acest exemplu am creat variabila variabila pornind de la $variabila1. folosim $$ pentru a crea variabila variabila. ce face aceasta variabila - ii ofera un fel de superputeri valorii variabilei initiale astfel incat valoarea poate fi folosita pe post de variabila/se transforma in variabila si citeste valoarea inscrisa in $$variabila1 (deci variabila variabila). numele primei variabile se transforma in variabila in care se depoziteaza valoarea variabilei variabilei marcate cu $$. dar daca am citi valoarea $variabila1 cu un singur $ se va afisa valoarea gogoasa, adica $ pastreaza valoarea sa initiala dincolo de aceea ca se creaza variabila de tip $$
+
+//echo $variabila1;
+
+//da un exemplu cu care sa iti demonstrezi cunostintele in legatura cu felul cum functioneaza variabila de referinta
+
+// $a = "padure";
+// $b = "vreascuri";
+// $a = &$b;
+//echo "Variabila a egala cu $a"."<br>"."Variabila b egala cu $b"."<br>";
+
+//lui $a i s-a atribuit valoarea lui $b. de asemenea aceasta valoare este una de referinta prin folosirea simbolului &
+//
+// $a = "sarbatoare";
+//echo $a."<br>";
+//echo $b;
+//dupa cum se observa am schimbat doar valoarea lui $a dar s-a modificat si valoarea lui $b, pentru ca valoarea acestor doua variabile ocupa acelasi spatiu de memorie.
+
+
+//Scrie un exemplu cu care sa demonstrezi intelegerea si utilizarea variabilei superglobale $_GET[]
+
+// $nume = $_GET["nume"];
+// $prenume = $_GET["prenume"];
+
+// echo "Numele meu este:" . $nume. " " . $prenume;
+
+//In acest exemplu simplu am definit in url valorile pentru cheile nume si prenume si le-am preluat cu variabila superglobala $_GET[] atribuindu-le celor doua variabile sus mentionate pe care ulterior le-am citit cu echo dupa concatenare
+
+//ce face variabila superglobala $_POST[] 
+
+//aceasta variabila se foloseste pentru a accesa de obicei datele dintr-un formular dupa ce s-a dat submit. cu POST se face conexiunea intre datele introduse de utilizator si codul php in care acestea sunt prelucrate. ele au un caracter de confidentialitate mai inalt si se utilizeaza cand lucram cu date in volum mare si care este bine sa fie mai securizate. POST face parte din antetul URL.
+
+
+$sir[0] = "vita-de-vie";
+$sir[1] = "mana-Maicii-Domnului";
+$sir[2] = "coacaz";
+
+//print_r($sir);
 
 
 
-?>
+$oras[] = "Constanta";
+$oras[] = "Bucuresti";
+$oras[] = "Flensburg";
+
+//print_r($oras);
+$sir_numeric_clar = range(50,100);
+//print_r($sir_numeric_clar);
+//echo $sir_numeric_clar[25];
+
+//echo "Mi-a placut foarte mult sa ma plimb intr-o zi cu soare in portul orasului $oras[2].";
+//multumesc
+ 
+unset($sir_numeric_clar[1]);
+
+//print_r($sir_numeric_clar);
+
+// $preferinte = array(
+//   array("Ecaterinei", "marea", "cartile", "programarea"),
+//   array("Mamei", "pietricelele", "florile", "ceaiul negru"),
+//   array("Lui Valentin", "jocurile", "tehnologia", "AI-ul")
+// );
+
+// foreach($preferinte as $item) {
+//   echo $item[0] . " ii plac " . $item[1] . ", $item[2] si $item[3]!"."<br>";
+// }
+
+//count si sizeof aceeasi functie - returneaza nr elementelor din sir
+
+//$nr_elem = sizeof($preferinte);
+//echo $nr_elem;
+
+//$numeric = [5,1,65,89,2,45,6,54,47];
+//sort($numeric);
+//print_r($numeric);
+//foreach($numeric as $numar) {
+  //echo $numar." ";
+//}
+
+// rsort($numeric);
+// foreach($numeric as $numar2) {
+//   echo $numar2." ";
+// }
+
+// ordoneaca crescator dupa valoare
+
+$sir2["programator"] = "programare";
+$sir2["scriitor"] = "scriitura";
+$sir2["farmacist"] = "consiliere";
+
+//asort($sir2);
+//print_r($sir2);
+
+//crescator dupa cheie
+
+//ksort($sir2);
+//print_r($sir2);
+
+//descrescator dupa cheie
+///krsort($sir2);
+//print_r($sir2);
+
+
+// $preferinte = array(
+//   array("Ecaterinei", "marea", "cartile", "programarea"),
+//   array("Mamei", "pietricelele", "florile", "ceaiul negru"),
+//   array("Lui Valentin", "jocurile", "tehnologia", "AI-ul")
+// );
+
+// shuffle($preferinte);
+// foreach($preferinte as $item) {
+//   echo $item[0] . " ii plac " . $item[1] . ", $item[2] si $item[3]!"."<br>";
+// }
+//print_r($preferinte);
+
+$arr_10 = ["cana", "farfurie", "furculita", "lingura", "polonic"];
+$slice = array_slice($arr_10, 0, 2);
+$slice2 = array_slice($arr_10, -2);
+
+//print_r($slice);
+//print_r($arr_10);
+
+//print_r($slice2);
+
+$merge = array_merge($slice, $slice2);
+//print_r($merge);
+
+$string3 = "lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum alias voluptatibus magnam, iusto nobis numquam debitis modi adipisci! Deserunt nihil saepe in nobis alias unde nam consequuntur repellat aliquid magnam";
+
+$arr_string = explode(" ", $string3);
+//print_r($arr_string);
+
+// $string4 = implode(" ", $arr_string);
+
+// print_r($string4);
+
+// for($i=0; $i<count($arr_string); $i++) {
+//   echo "Cuvantul nr $i in string este \"$arr_string[$i]\"."."<br>";
+// }
+
+//array_diff restanta
+
+// $numeric = [5,1,65,89,2,45,6,54,47];
+// $suma = array_sum($numeric);
+// //print_r($numeric)
+// print_r($suma);
+
+// $numeric = [5,5,5,1,65,89,892,45,6,54,54,47];
+// $unic = array_unique($numeric);
+// print_r($unic);
+
+$arr101 = [2,5,1,7,4,3,8];
+//a se sorta in ordine crescatoare.
+
+sort($arr101);
+//print_r($arr101);
+
+$array = array(
+  array(1, 2, 3),
+  array("a", "b", "c"),
+  array(true, false, true)
+);
+
+//var_dump( $array[2][1]);
+ //echo $array[1][2];
+ //echo $array[0][0];
+
+
+ ?>
