@@ -1186,21 +1186,46 @@ $arr_string = explode(" ", $string3);
 // $unic = array_unique($numeric);
 // print_r($unic);
 
-$arr101 = [2,5,1,7,4,3,8];
+//$arr101 = [2,5,1,7,4,3,8];
 //a se sorta in ordine crescatoare.
 
-sort($arr101);
+//sort($arr101);
 //print_r($arr101);
 
-$array = array(
-  array(1, 2, 3),
-  array("a", "b", "c"),
-  array(true, false, true)
-);
 
 //var_dump( $array[2][1]);
  //echo $array[1][2];
  //echo $array[0][0];
+
+
+//  Exercițiul 1: Afișarea elementelor unui array
+//Să se scrie un program care afișează fiecare element al unui array pe o linie nouă, folosind o buclă.
+
+
+// $array = array(
+//   array(1, 2, 3),
+//   array("a", "b", "c"),
+//   array(true, false, true)
+// );
+
+// foreach($array as $item) {
+//   echo $item[0]."<br>".$item[1]."<br>".$item[2]."<br>";
+// }
+
+// Exercițiul 2: Suma elementelor unui array
+// Să se calculeze suma elementelor unui array și să se afișeze rezultatul.
+
+// $arr101 = [2,5,1,7,4,3,8];
+// $sum = 0;
+
+// foreach($arr101 as $item) {
+//   $sum = $sum + $item;
+// }
+// //echo $sum;
+
+// if(in_array(5, $arr101)) {
+//   echo "Avem 5 in array" ;
+// }
 
 
  ?>
