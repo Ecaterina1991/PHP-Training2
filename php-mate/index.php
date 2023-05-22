@@ -1243,15 +1243,26 @@ $arr_string = explode(" ", $string3);
 
 // $a ? print "TRUE" : print "FALSE";
 
-$arr_dosar = [
-[1, "Viorel", "Cascaval", 55555555],
-[2, "Elena", "Strungareata", 888888888],
-[3, "George", "Agricol", 44444444],
-];
+// $arr_dosar = [
+// [1, "Viorel", "Cascaval", 55555555],
+// [2, "Elena", "Strungareata", 888888888],
+// [3, "George", "Agricol", 44444444],
+// ];
 
-for($i=0; $i<count($arr_dosar); $i++) {
-echo "In linia " . $arr_dosar[$i][0] . " a dosarului figureaza " . $arr_dosar[$i][1] . " " . $arr_dosar[$i][2] . " cu ID-ul " . $arr_dosar[$i][3]."."."<br>";
-}
+// for($i=0; $i<count($arr_dosar); $i++) {
+// echo "In linia " . $arr_dosar[$i][0] . " a dosarului figureaza " . $arr_dosar[$i][1] . " " . $arr_dosar[$i][2] . " cu ID-ul " . $arr_dosar[$i][3]."."."<br>";
+// }
+
+//afisati cheia "natura" din acest array
+
+$viitor = ["frumusete" => "arta", "natura" => "vitalitate", "programare" => "evolutie"];
+
+$cheile = array_keys($viitor);
+//print_r($cheile);
+
+echo $cheile[1];
+
+
 
 
  ?>
