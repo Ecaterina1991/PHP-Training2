@@ -130,16 +130,16 @@ $binar23 = decbin($dec56);
 
 //Exercițiul 1: Conversie din baza 2 în baza 10
 
-// $binaryNumber = "10101011110000";
-// $decimalNumber = 0;
-// $power = 0;
+$binaryNumber = "10101011110000";
+$decimalNumber = 0;
+$power = 0;
 
-// for ($i = strlen($binaryNumber) - 1; $i >= 0; $i--) {
-//     $decimalNumber += intval($binaryNumber[$i]) * (2 ** $power);
-//     $power++;
-// }
+for ($i = strlen($binaryNumber) - 1; $i >= 0; $i--) {
+    $decimalNumber += intval($binaryNumber[$i]) * (2 ** $power);
+    $power++;
+}
 
-// echo $decimalNumber;  // Output: 42
+echo $decimalNumber;  // Output: 42
 
 //conv b8 - b10
 
@@ -173,16 +173,38 @@ $binar23 = decbin($dec56);
 
 //Exercițiul: Conversie din baza 10 în baza 16
 
-$decimalNumber = 305;
-$hexadecimalNumber = '';
+// $decimalNumber = 305;
+// $hexadecimalNumber = '';
 
-while ($decimalNumber > 0) {
-    $remainder = $decimalNumber % 16;
-    $hexadecimalNumber = dechex($remainder) . $hexadecimalNumber;
-    $decimalNumber = intdiv($decimalNumber, 16);
-}
+// while ($decimalNumber > 0) {
+//     $remainder = $decimalNumber % 16;
+//     $hexadecimalNumber = dechex($remainder) . $hexadecimalNumber;
+//     $decimalNumber = intdiv($decimalNumber, 16);
+// }
 
-echo $hexadecimalNumber;  // Output: 131
+//echo $hexadecimalNumber;  // Output: 131
+
+
+//echo este mai rapid decat print
+//print este functie, returneaza 1, echo nu
+//print primeste un singur argument, echo poate primi unul sau mai multe
+//deoarece echo nu e functie, nu poate fi folosit ca parte a unor comenzi mai complexe (expresii)
+
+
+
+$b=5;
+//$b ? print "True" : print "FALSE";
+//echo(print($b))."<br>";
+ //print(echo($b));//error
+//echo 15+print(16);
+//print 10 + echo 10; //error
+
+//echo(print($b));
+
+//echo 30+print(20);
+
+echo 45 + print(2);
+
 
 
 
